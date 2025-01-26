@@ -7,7 +7,7 @@ layout: page.njk
 The Short Form
 -------------
 
-We invite you to come to PyCon India 2024 in a spirit of curiosity, friendliness, open-mindedness, and respect. We will not tolerate harassment in any form.
+We invite you to come to PyCon India 2025 in a spirit of curiosity, friendliness, open-mindedness, and respect. We will not tolerate harassment in any form.
 
 At the PyCon India venue and related online forums, you agree to:
 * Be kind and sensitive to the people around you and respect the boundaries of other attendees.
@@ -28,11 +28,11 @@ PyCon India is a community organised conference intended for advocating the use 
 
 We believe in the broad spectrum of individual and collective experience and in the inherent dignity of all people. We believe that amazing things happen when people from different worlds and world-views approach each other to create a conversation.
 
-PyCon India 2024 welcomes everyone and is dedicated to providing a harassment-free conference experience for everyone, regardless of age, gender, sexual orientation, physical appearance, disability, neurotype, race, religion, political opinion, culture or employment. We don’t tolerate harassment of attendees in any form.
+PyCon India 2025 welcomes everyone and is dedicated to providing a harassment-free conference experience for everyone, regardless of age, gender, sexual orientation, physical appearance, disability, neurotype, race, religion, political opinion, culture or employment. We don’t tolerate harassment of attendees in any form.
 
 ### Where
 
-This Code of Conduct applies to the venue of PyCon India 2024 Conference, pre-event & post-event informal gatherings, related online forums and all conference related events organised by PyCon India.
+This Code of Conduct applies to the venue of PyCon India 2025 Conference, pre-event & post-event informal gatherings, related online forums and all conference related events organised by PyCon India.
 
 ### Who
 
