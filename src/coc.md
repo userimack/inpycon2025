@@ -67,8 +67,6 @@ Participants asked to stop any harassing behaviour are expected to comply immedi
 
 ### Reporting 
 
-[[ TODO SOHOM ? What to do here ?? hould we keep this ?]]
-
 If you are being harassed or notice that someone else is being harassed, or have any other concerns, please reach out to us at [coc@in.pycon.org](mailto:coc@in.pycon.org) before, during or after the conference.
 
 Feel free to contact a conference volunteer to find the Code of Conduct committee or directly reach out to the Code of Conduct committee and they will take your report and do the needful action. Volunteers will be wearing Volunteer badges and CoC committee will be wearing a special colour shirt to be able to easily identify them. Please be assured that any report/incident you shared with us will be highly confidential and will not leave outside the bounds of CoC committee members.
