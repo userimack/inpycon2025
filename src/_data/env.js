@@ -1,7 +1,7 @@
-const isPages = process.env.ELEVENTY_ENV === 'pages'
+const isPord = process.env.ELEVENTY_ENV === 'prod'
 
 module.exports = {
-  baseUrl: isPages
-    ? '/11ty-landing-page/'
+  baseUrl: isPord
+    ? '/inpycon2025/'
     : '/'
 }

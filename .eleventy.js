@@ -2,8 +2,8 @@ const htmlmin = require("html-minifier");
 const markdownIt = require('markdown-it');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-const isPages = process.env.ELEVENTY_ENV === 'pages'
-const outDir = isPages ? 'docs' : 'public'
+const isProd = process.env.ELEVENTY_ENV === 'prod'
+const outDir = 'public'
 
 module.exports = function (eleventyConfig) {
   // PLUGINS
@@ -53,6 +53,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: isProd ? "inpycon2025" : "",
     dir: {
       input: 'src',
       output: outDir,
