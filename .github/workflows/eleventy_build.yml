@@ -27,7 +27,7 @@ jobs:
         run: npm ci
 
       - name: Build site with Eleventy
-        run: npm run deploy-prod # Ensure this script is set up in package.json
+        run: npm run deploy-dev # Ensure this script is set up in package.json
 
       - name: Upload artifact for deployment
         id: dep

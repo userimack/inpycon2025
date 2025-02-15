@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "deploy": "eleventy",
-    "deploy-prod": "ELEVENTY_ENV=prod eleventy"
+    "deploy-dev": "ELEVENTY_ENV=dev eleventy"
   },
   "author": "ttntm",
   "license": "MIT",
