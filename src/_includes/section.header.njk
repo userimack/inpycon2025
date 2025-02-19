@@ -1,9 +1,16 @@
 <div class="self-center items-center md:w-full">
-    <div class="w-3/5 text-center mx-auto">
-      <img src="{{ env.baseUrl }}img/pycon_2025.svg">
+    <div class="w-4/5 text-center mx-auto">
+      <img class="w-3/5 drop-shadow-md rounded-md m-auto" src="{{ env.baseUrl }}img/pycon_2025.svg">
       <br>
       <br>
-      <div class="grid grid-cols-3 justify-center items-center space-x-4 text-xl md:text-xl divide-x-3 divide-dashed divide-indigo-500">
+      <div class="justify-center items-center text-2xl md:text-3xl">
+        PyCon India is the premier conference for Python enthusiasts and professionals, offering an unparalleled opportunity to dive deep into the world of Python and explore its limitless potential. Stay tuned for updates!
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="grid grid-cols-3 justify-center items-center space-x-4 text-xl md:text-xl">
         <div class="col-md-4 text-center pt-md-5 border-solid">
             <p class="h4 sub-tit pt-3 md:text-h4 font-semibold">12 September</p>
             <p class="h4 sub-tit pt-3 md:text-h4">Workshops</p>
@@ -54,7 +61,7 @@
 
 <footer>
   <div class="text-center pr-0 sm:pr-8 py-4">
-    Get in touch with us!
+    <div class="text-l">Get in touch with us!</div>
     <ul class="flex justify-center space-x-4">
       {% for item in site.social %}
         <li>
