@@ -1,0 +1,46 @@
+<section class="bg-blue-600 text-white relative my-20 px-20">
+    <div
+        class="max-w-7xl mx-auto py-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div>
+            <h2 class="text-4xl font-extrabold mb-4">Event Sponsors</h2>
+            <p class="text-white text-base mb-6">
+                PyCon India is completely driven by volunteers. Sponsoring the event helps to sustain and grow the conference as well as
+                the Community. Sponsor help in making the conference affordable, and maintaining the inventory for the conference.
+            </p>
+            <a
+                href="/prospectus.pdf"
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-lime-300 text-black px-6 py-2 rounded-full font-semibold shadow-md bg-[#D7FF7B]
+                    hover:bg-lime-200 transition">
+                Download Prospectus
+            </a>
+        </div>
+        <div class="flex justify-end relative -top-40">
+            <img src="/img/landing/test-1.png" alt="Mascot on Bicycle" class="w-60 md:w-72"/>
+        </div>
+    </div>
+    <div
+        class="max-w-7xl mx-auto px-6 pb-20 grid gap-10 text-black">
+        {% set sponsors = {
+        "PLATINUM": 3,
+        "GOLD": 5,
+        "SILVER": 5,
+        "ASSOCIATE": 2
+        } %}
+        {% for tier, count in sponsors %}
+            <div>
+                <div class="bg-white inline-block px-8 py-2 font-bold text-lg shadow uppercase">
+                    {{ tier }}
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 gap-0 bg-transparent ">
+                    {% for i in range(0, count) %}
+                        <div
+                            class="h-20 bg-white border border-black flex items-center justify-center">
+                            <span class="text-xs font-medium text-gray-400">Logo {{ i + 1 }}</span>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
