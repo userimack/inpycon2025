@@ -3,9 +3,10 @@ layout: base.njk
 isFront: true
 ---
 
-<header class="header w-full flex flex-col justify-between">
-  {% include "navbar.njk" %}
-</header>
-<main class="my-8 flex-grow">
-  {% include "section.header.njk" %}
+<main class="flex-grow">
+  {% include "landing/hero-banner.njk" %}
+  {% include "landing/hero.njk" %}
+  {% include "landing/keynotes.njk" %}
+  {% include "landing/sponsors.njk" %}
+  {% include "landing/x-wall.njk" %}
 </main>
