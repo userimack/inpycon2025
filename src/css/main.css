@@ -392,3 +392,30 @@ body.overflow-hidden {
 .animate-fadeOut {
   animation: fadeOut 1.5s ease-in-out forwards 2s;
 }
+
+#main-navbar {
+  transition: transform 0.4s ease-in-out, 
+              opacity 0.4s ease-in-out, 
+              background-color 0.3s ease;
+}
+
+.is-home-page main {
+  padding-top: 0;
+}
+
+body:not(.is-home-page) main {
+  padding-top: 4rem;
+}
+
+#main-navbar.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.is-home-page .home-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.animate-fadeOut.is-home-page {
+  z-index: 10000;
+}

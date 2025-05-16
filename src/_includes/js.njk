@@ -16,7 +16,8 @@
     // Back to top visibility and navbar scroll effect
     const handleScroll = () => {
       const btt = document.getElementById('btt');
-      const navbar = document.querySelector('.glass-nav');
+      const navbar = document.querySelector('#main-navbar');
+      const isHomePage = document.body.classList.contains('is-home-page');
       
       if (btt) {
         if (window.scrollY >= 1080) {
@@ -28,12 +29,24 @@
         }
       }
       
-      // Handle navbar transparency on scroll
+      // Handle navbar appearance on scroll
       if (navbar) {
         if (window.scrollY > 50) {
           navbar.classList.add('scrolled');
+          
+          // For homepage, make navbar visible after scrolling
+          if (isHomePage) {
+            navbar.classList.remove('opacity-0', '-translate-y-full');
+            navbar.classList.add('opacity-100', 'translate-y-0', 'bg-pycon-blue/70');
+          }
         } else {
           navbar.classList.remove('scrolled');
+          
+          // For homepage, hide navbar when at the top
+          if (isHomePage) {
+            navbar.classList.add('opacity-0', '-translate-y-full');
+            navbar.classList.remove('opacity-100', 'translate-y-0', 'bg-pycon-blue/70');
+          }
         }
       }
     };
@@ -138,5 +151,8 @@
         link.addEventListener('click', closeMobileMenu);
       });
     }
+    
+    // Trigger initial navbar state
+    handleScroll();
   });
 </script>

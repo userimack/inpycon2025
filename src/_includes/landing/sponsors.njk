@@ -1,7 +1,7 @@
 {% from "components/button.njk" import button %}
 
-<section class="bg-blue-600 text-white relative px-4 sm:px-20" id="sponsors">
-    <div class="max-w-7xl mx-auto py-16 px-2 sm:px-6">
+<section class="bg-blue-600 text-white relative px-4 sm:px-20 md:px-40" id="sponsors">
+    <div class="mx-auto py-16">
         <!-- Desktop image visible -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10">
             <div>
@@ -13,7 +13,7 @@
                 {{ button(text="Download Prospectus", url="/prospectus.pdf", lime_bg=true) }}
             </div>
             <!-- Desktop image -->
-            <div class="hidden md:flex justify-end">
+            <div class="hidden md:flex justify-end -mt-72">
                 <img 
                     src="/img/landing/sponsor-sec.svg" 
                     alt="Mascot on Bicycle" 
@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 pb-10 grid gap-4 sm:gap-10 text-black">
+    {# <div class="max-w-7xl mx-auto px-2 sm:px-6 pb-10 grid gap-4 sm:gap-10 text-black">
         {% set sponsors = {
         "PLATINUM": 3,
         "GOLD": 5,
@@ -43,7 +43,7 @@
                 </div>
             </div>
         {% endfor %}
-    </div>
+    </div> #}
     
     <!-- Mobile image -->
     <div class="md:hidden flex justify-center pb-10">
