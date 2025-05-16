@@ -3,7 +3,7 @@
   <head>
     {% include "head.njk" %}
   </head>
-  <body id="top" class="font-sans text-gray-800 min-h-screen flex flex-col">
+  <body id="top" class="font-sans text-gray-800 min-h-screen flex flex-col {% if isFront %}is-home-page{% endif %}">
     {% from "navbar.njk" import navbar %}
     {{ navbar(isFront) }}
     
