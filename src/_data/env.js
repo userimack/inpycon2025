@@ -1,7 +1,7 @@
-const isProd = process.env.ELEVENTY_ENV === 'prod'
+const isDev = process.env.ELEVENTY_ENV === 'dev'
 
 module.exports = {
-  baseUrl: isProd
-    ? '/2025/'
-    : '/'
+  baseUrl: isDev
+    ? '/'
+    : '/2025/'
 }
