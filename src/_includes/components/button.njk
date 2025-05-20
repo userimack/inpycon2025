@@ -1,4 +1,4 @@
-{% macro button(text, url, lime_bg=false) %}
+{% macro button(text, url, lime_bg=false, env = env) %}
     {% if lime_bg %}
         {% set bg_class = "bg-pycon-lime hover:bg-pycon-lime/90" %}
         {% set text_class = "text-black" %}
@@ -12,7 +12,7 @@
             {{ text }}
         </span>
         <div class="flex justify-center items-center w-8 h-8 bg-white rounded-full border border-black group-hover:rotate-45 transition-transform duration-300">
-            <img src="{{ '/img/assets/arrow-vector.svg' | url }}" alt="Arrow" class="w-4 h-3 group-hover:scale-110 transition-transform duration-300" />
+            <img src="{{ env.baseUrl }}img/assets/arrow-vector.svg" alt="Arrow" class="w-4 h-3 group-hover:scale-110 transition-transform duration-300" />
         </div>
     </a>
 {% endmacro %}
